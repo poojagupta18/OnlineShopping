@@ -42,6 +42,8 @@ public class OrderController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Inside doget of orderController");
+		
 		String action = request.getParameter("action");
 		String username = (String)request.getSession().getAttribute("username");
 		String orderId = request.getParameter("orderId");
